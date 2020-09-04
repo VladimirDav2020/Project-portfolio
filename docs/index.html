@@ -34,7 +34,7 @@
                     <h1><span class="header-title">Владимир</span><br><span class="header-title">Давыдюк</span></h1>
                     <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с <br> соблюдением сроков и выполнением ТЗ.</p>
                     <div class="buttons">
-                        <a href="#" class="acquaint">Познакомиться</a>
+                        <a href="#my-skills" class="button acquaint">Познакомиться</a>
                         <a href="#" class="button">Контакты</a>
                     </div>  
                 </div>
@@ -45,7 +45,7 @@
             <img src="./img/header/bg-desktop.jpg" alt="Фото">
         </div>
         <div class="container">
-            <div class="about">
+            <div id="my-skills" class="about">
                 <div class="about__skills">
                     <h3 class="title">Что я умею:</h3>
                     <ul class="about__skills-list">
@@ -55,7 +55,7 @@
                         <li class="list-item"><span class="custom"></span>оптимизация по retina экраны</li>
                         <li class="list-item"><span class="custom"></span>с Bootstrap и без него.</li> 
                     </ul>
-                    <a href="#" class="work-button">Смотреть работы</a>
+                    <a href="#my-works" class="button acquaint">Смотреть работы</a>
                 </div>
                 <div class="about__social">
                     <h3 class="title">На связи:</h3>
@@ -73,7 +73,7 @@
 
     <main>
         <!-- СЕКЦИЯ ПОРТФОЛИО -->
-        <section class="section-portfolio">
+        <section id="my-works" class="section-portfolio">
             <div class="container">
                 <div class="block-content">
                     <h2 class="section-title bottom-line">Портфолио</h2>
@@ -126,9 +126,67 @@
         <!-- СЕКЦИЯ КАК Я РАБОТАЮ -->
         <section class="section-work">
             <div class="container">
+                <div class="section-work__title">
+                    <h2 class="section-title bottom-line">Как я работаю</h2>
+                </div>
+                
                 <!-- Контент Section-work -->
                 <div class="section-work__content">
-                   
+                    <div class="work-item">
+                        <div class="work-item__icon">
+                            <img src="./img/work/work-icon-1.png" alt="">
+                        </div>
+                        <div class="work-item__text">
+                            <h3 class="work-item__text-title bottom-line">Оцениваю макет</h3>
+                            <p class="work-item__text-info">Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+                            <p class="work-item__text-time">Время: 2 - 4 часа</p>
+
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-item__icon">
+                            <img src="./img/work/work-icon-2.png" alt="">
+                        </div>
+                        <div class="work-item__text">
+                            <h3 class="work-item__text-title bottom-line">ТЗ, смета и график работ</h3>
+                            <p class="work-item__text-info">Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
+                            <p class="work-item__text-time">Время: 2 - 4 часа</p>
+
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-item__icon">
+                            <img src="./img/work/work-icon-3.png" alt="">
+                        </div>
+                        <div class="work-item__text">
+                            <h3 class="work-item__text-title bottom-line">Вы держите руку на пульсе</h3>
+                            <p class="work-item__text-info">Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p>
+                            <p class="work-item__text-time">Время: 2 часа</p>
+
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-item__icon">
+                            <img src="./img/work/work-icon-4.png" alt="">
+                        </div>
+                        <div class="work-item__text">
+                            <h3 class="work-item__text-title bottom-line">Выполняю каждый этап</h3>
+                            <p class="work-item__text-info">Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
+                            <p class="work-item__text-time">Время: 2 - 4 часа</p>
+
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-item__icon">
+                            <img src="./img/work/work-icon-5.png" alt="">
+                        </div>
+                        <div class="work-item__text">
+                            <h3 class="work-item__text-title bottom-line">Финальное ревью проекта</h3>
+                            <p class="work-item__text-info">Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
+                            <p class="work-item__text-time">Время: 2 - 4 часа</p>
+
+                        </div>
+                    </div>
                 </div>
                 <!-- //Контент Section-work -->
             </div>

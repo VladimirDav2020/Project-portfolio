@@ -116,16 +116,8 @@ button{
     margin-right: auto;
     padding: 0 15px;
 
-    @media(min-width: 576px){
-        max-width: 540px;
-    }
-
     @media(min-width: 768px){
         max-width: 738px;
-    }
-
-    @media(min-width: 992px){
-        max-width: 960px;
     }
 
     @media(min-width: 1200px){
@@ -138,7 +130,8 @@ button{
     position: relative;
     width: fit-content;
     z-index: 2;
-    &:after{
+    
+    &::after{
         content: '';
         position: absolute;
         bottom: 5px;
@@ -151,22 +144,47 @@ button{
 }
 
 .button{
-    display: block;
-    padding: 10px 39px 12px;
+    display: inline-block;
+    height: 60px;
+    line-height: 50px;
+    padding: 0 41px;
     font-family: var(--fontreg);
     border-radius: 32px;
     border: 4px solid var(--btn2bas);
     color: var(--btn2bas);
     font-size: 22px;
     font-weight: 700;
+    transition: .3s;
 
     &:hover{
         border: 4px solid var(--btn2hov);
         color: var(--btn2hov);
+        transition: .3s;
     }
     &:active{
         border: 4px solid var(--btn2act);
         color: var(--btn2act);
+        transition: .3s;
+    }
+}
+
+.acquaint{
+    background-color: var(--btnbas);
+    border: 4px solid var(--btnbas);
+    color: #000;
+    transition: .3s;
+
+    &:hover{
+        background-color: var(--btnhov);
+        border: 4px solid var(--btnhov);
+        color: #000;
+        transition: .3s;
+    }
+    &:active{
+        background-color: var(--btnact);
+        border: 4px solid var(--btnact);
+        color: #000;
+        transition: .3s;
     }
 }
 

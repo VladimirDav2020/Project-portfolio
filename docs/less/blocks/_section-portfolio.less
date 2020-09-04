@@ -4,6 +4,7 @@
 
     .bottom-line:after{
         bottom: 18px;
+        height: 12px;
     }
 }
 
@@ -64,6 +65,7 @@
         margin-bottom: 30px;
     }
 }
+
 .portfolio-imh-link{
     display: block;  
 }
@@ -81,9 +83,11 @@
 
     &:after{
         content: '';
-        display: block;
+        position: absolute;
         height: 2px;
         width: 0;
+        bottom: 4px;
+        left: 0;
         background-color: var(--titleimghov);
         transition: width 0.4s ease-in-out;
     }
@@ -94,8 +98,7 @@
 
     &:hover:after{
         width: 100%;
-    }
-    
+    }  
 }
 
 .content__sub-title{
@@ -104,6 +107,7 @@
     font-size: 22px;
     font-weight: 300;
 }
+
 .content-bottom{
     display: flex;
     justify-content: space-between;
@@ -124,5 +128,8 @@
 
     .content__sub-title{
         font-size: 20px;
+    }
+    .content__title::after{
+        bottom: 2px;
     }
 }
