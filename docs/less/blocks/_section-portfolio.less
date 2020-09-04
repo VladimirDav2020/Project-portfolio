@@ -1,0 +1,128 @@
+.section-portfolio{
+    padding: 128px 0 121px;
+    background-color: var(--bgport);
+
+    .bottom-line:after{
+        bottom: 18px;
+    }
+}
+
+.section-portfolio__platform{
+    display: flex;
+    margin-bottom: 50px;
+
+    .black{
+        color: #000;
+
+        &:hover{
+            color: #000;
+            
+        }
+    }
+}
+
+.platform__title{
+    color: var(--titleportbas);
+    font-family: var(--fontreg);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.section-portfolio__sub-title{
+    margin-right: 82px;
+    color: var(--titleportbas);
+    font-family: var(--fontreg);
+    font-size: 32px;
+    font-weight: 700;
+    transition: 0.5s;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover{
+        color: var(--titleporthov);
+        transition: 0.5s;
+    }
+
+    &:active{
+        color: var(--titleportact);
+    }
+}
+
+.content-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.content-top-item{
+    width: 49%;
+    max-width: 556px;
+
+    img{
+        margin-bottom: 30px;
+    }
+}
+.portfolio-imh-link{
+    display: block;  
+}
+
+.content__title{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: var(--fontreg);
+    font-size: 32px;
+    font-weight: 700;
+    transition: 0.4s;
+
+    &:after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: var(--titleimghov);
+        transition: width 0.4s ease-in-out;
+    }
+    &:hover{
+        color: var(--titleimghov);
+        transition: 0.4s;
+    }
+
+    &:hover:after{
+        width: 100%;
+    }
+    
+}
+
+.content__sub-title{
+    color: #000000;
+    font-family: var(--fontreg);
+    font-size: 22px;
+    font-weight: 300;
+}
+.content-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.content-bottom-item{
+    width: 33%;
+    max-width: 360px;
+
+    img{
+        margin-bottom: 30px;
+    }
+
+    .content__title{
+        font-size: 26px;
+    }
+
+    .content__sub-title{
+        font-size: 20px;
+    }
+}
