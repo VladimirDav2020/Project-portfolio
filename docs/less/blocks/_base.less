@@ -47,6 +47,7 @@
     --textfooter:rgb(178, 178, 178);
     --textfooteract:rgb(218, 218, 218);
     --textfooterfocus:rgb(218, 218, 218);
+    --bgcontc:rgb(244, 248, 249);
     --fontreg: 'M PLUS 1p';
 }
 
@@ -111,13 +112,14 @@ button{
 
 .container{
     max-width: 1140px;
-    max-width: 320px;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 
     @media(min-width: 768px){
         max-width: 738px;
+        padding: 0 30px;
     }
 
     @media(min-width: 1200px){
@@ -204,5 +206,16 @@ button{
     font-weight: 800;
 }
 
+.flex-wrapper{
+    display: block;
+    
+    @media(min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+    }
 
+}
 
+.none{
+    display: none;
+}

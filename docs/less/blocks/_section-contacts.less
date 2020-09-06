@@ -1,0 +1,218 @@
+.section-contacts{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    padding-bottom: 60px; 
+
+    @media(min-width: 768px){
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @media(min-width: 1200px){
+        padding-top: 150px;
+        padding-bottom: 150px; 
+        background-color: #f4f8f9;
+        background-image: url(../img/contacts/bg-contacts.jpg);
+        background-repeat: repeat-y;
+        background-size: auto;
+        background-position: center;
+    }
+    .section-title{
+        margin-bottom: 80px;
+    }
+}
+
+.contacts-text__top{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    
+
+    @media(min-width: 768px){
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    @media(min-width: 1200px){
+        font-size: 20px;
+        margin-bottom: 50px;
+        
+    }
+}
+
+.contacts-list{
+    margin-bottom: 40px;
+
+    @media(min-width: 768px){
+        margin-bottom: 38px;
+    }
+
+    @media(min-width: 1200px){
+        margin-bottom: 48px;
+        
+    }
+}
+
+.contacts-list-item{
+    display: block;
+    margin-bottom: 20px;
+
+    p{
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 10px;
+
+    }
+
+    a{
+        font-size: 20px;
+        color: rgb(3, 155, 229);
+        line-height: 1.2;
+        font-weight: 500;   
+    }
+    .gray{
+        font-size: 20px;
+        color: rgb(150, 150, 157);
+        line-height: 1.2;
+    }
+    @media(min-width: 768px){
+        p{
+            margin-bottom: 0;
+        }
+    }
+
+    @media(min-width: 1200px){
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 38px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+            p:first-child{
+                min-width: 95px;
+                margin-right: 80px;
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+        }
+}
+
+.contacts-text{
+    width: 100%;
+    position: relative;
+
+    @media(min-width: 768px){
+        width: 43%;
+        .social-list{
+            margin-bottom: 0;
+        }
+    }
+
+    @media(min-width: 1200px){
+        width: 47%;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 450px;
+            height: 280px;
+            background-image: url(../img/contacts/quote.png);
+            background-repeat: repeat-y;
+            background-size: auto;
+            background-position: center;
+            top: -5%;
+            left: -65%;
+        }
+    }
+}
+
+.contacts-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:60px 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 28px 40px #c2dbeb;
+
+    @media(min-width: 768px){
+        width: 43%;
+    }
+    @media(min-width: 1200px){
+        width: 47%;
+    }
+}
+
+.form-item{
+    position: relative;
+    &:nth-child(1){
+        margin-bottom: 45px;
+    }
+
+    &:nth-child(2){
+        margin-bottom: 45px;
+    }
+
+    &:nth-child(3){
+        margin-bottom: 20px;
+    }
+    
+    input{
+        outline:none;
+        border: none;
+        border-bottom:2px solid #eaeaea;
+        padding-bottom: 8px;
+    
+        color: #000000;
+        font-family: var(--fontreg);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    textarea{
+        outline:none;
+        border: none;
+        overflow: auto;
+        resize: none;
+        width: 100%;
+        height: 111px;
+
+        border-bottom:2px solid #eaeaea;
+
+        color: #000000;
+        font-family: var(--fontreg);
+        font-size: 20px;
+        font-weight: 700;
+    } 
+    @media(min-width: 1200px){
+        input{
+            width: 100%;
+        }
+    }
+}
+
+.fake-placeholder{
+    position: absolute;
+    pointer-events:none;
+    left: 0px;
+    top: 0px;
+    color: #bcbcbc;
+    font-family: var(--fontreg);
+    font-size: 20px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.fake-placeholder.active{
+    color: #ed9626;
+    font-size: 16px;
+    font-weight: 700;
+    top: -20px;
+}
+
+
