@@ -84,13 +84,20 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 400px;
+    height: 100vh;
     width: 100%;
     max-width: 360px;
+    padding-top: 30px;
+    padding-left: 30px;
+    
     background-color: #fff;
     z-index: 5;
     transform: translateX(100%);
     transition: .5s;
+
+    .logo{
+        margin-bottom: 30px;
+    }
 
     a{
         margin-left: 15px;
@@ -109,6 +116,10 @@
         max-width: unset;
         background-color: transparent;
         transform: translateX(0%);
+
+        .logo{
+            display: none;
+        }
     }
 }
 
@@ -163,9 +174,14 @@
     }
 }
 
+.mob-menu__email{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .mobile-contacts .nav-social{
     display: flex;
-    flex-direction: column;
     a{
         margin-right: 0;
         margin-bottom: 20px;
@@ -176,17 +192,10 @@
 
     }
 
-    .mob-menu__email{
-        color: #000;
-        font-size: 20px;
-        font-weight: 500;
-    }
-
     @media(min-width: 1200px){
         display: none;
     }
 }
-
 
 .toggle-menu{
     width: 40px;
@@ -195,10 +204,6 @@
     cursor: pointer;
     position: relative;
     z-index: 6;
-
-    @media(min-width: 1200px){
-        display: none;
-    }
 
     span{
         width: 100%;
@@ -225,6 +230,10 @@
         &::before{
             transform: translateY(-10px);
         }
+    }
+
+    @media(min-width: 1200px){
+        display: none;
     }
 }
 
@@ -285,9 +294,9 @@
 
     @media(min-width: 1200px){
         padding: 0px;
-    }
-    
+    }  
 }
+
 .header__content-text{
     width: 100%;
     max-width: 285px;
@@ -464,6 +473,13 @@
         max-width: 1600px;
     }
 }
+#my-skills{
+
+    @media(min-width: 1200px){
+        margin-top: -230px;
+        padding-top: 280px;
+    } 
+}
 
 .title{
     margin-bottom: 26px;
@@ -479,6 +495,7 @@
         font-size: 40px;
     }
 }
+
 .about__skills{
     width: 100%;
 
@@ -489,20 +506,17 @@
     @media(min-width: 1200px){
         
     }
-
     .acquaint{
         display: none;
 
         @media(min-width: 768px){
-            
-            
+                 
         }
         
         @media(min-width: 1200px){
             display: inline-block;
         }  
-    }
-    
+    }   
 }
 .about__skills-list{
     margin-bottom: 45px;
@@ -537,6 +551,7 @@
         margin-bottom: 3px;
     }
 }
+
 .about__social{
     width: 100%;
     @media(min-width: 768px){
@@ -636,6 +651,4 @@
         transition: .3s;
     }
 }
-
-
 // КОНТЕНТ ШАПКИ

@@ -434,9 +434,11 @@ button {
   position: fixed;
   top: 0;
   right: 0;
-  height: 400px;
+  height: 100vh;
   width: 100%;
   max-width: 360px;
+  padding-top: 30px;
+  padding-left: 30px;
   background-color: #fff;
   z-index: 5;
   -webkit-transform: translateX(100%);
@@ -448,6 +450,9 @@ button {
   -o-transition: .5s;
   -moz-transition: .5s;
   transition: .5s;
+}
+.nav-list .logo {
+  margin-bottom: 30px;
 }
 .nav-list a {
   margin-left: 15px;
@@ -474,6 +479,9 @@ button {
         -ms-transform: translateX(0%);
          -o-transform: translateX(0%);
             transform: translateX(0%);
+  }
+  .nav-list .logo {
+    display: none;
   }
 }
 .nav-list.active {
@@ -527,19 +535,17 @@ button {
     margin-left: 40px;
   }
 }
+.mob-menu__email {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
 .mobile-contacts .nav-social {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .mobile-contacts .nav-social a {
   margin-right: 0;
@@ -547,11 +553,6 @@ button {
 }
 .mobile-contacts .nav-social a:last-child {
   margin-bottom: 0;
-}
-.mobile-contacts .nav-social .mob-menu__email {
-  color: #000;
-  font-size: 20px;
-  font-weight: 500;
 }
 @media (min-width: 1200px) {
   .mobile-contacts .nav-social {
@@ -569,11 +570,6 @@ button {
   cursor: pointer;
   position: relative;
   z-index: 6;
-}
-@media (min-width: 1200px) {
-  .toggle-menu {
-    display: none;
-  }
 }
 .toggle-menu span {
   width: 100%;
@@ -608,6 +604,11 @@ button {
       -ms-transform: translateY(-10px);
        -o-transform: translateY(-10px);
           transform: translateY(-10px);
+}
+@media (min-width: 1200px) {
+  .toggle-menu {
+    display: none;
+  }
 }
 .active span {
   height: 0;
@@ -915,6 +916,12 @@ button {
          -o-transform: scale(1);
             transform: scale(1);
     max-width: 1600px;
+  }
+}
+@media (min-width: 1200px) {
+  #my-skills {
+    margin-top: -230px;
+    padding-top: 280px;
   }
 }
 .title {
