@@ -242,11 +242,21 @@ button{
 }
 
 .section-title{
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     color: #000000;
     font-family: var(--fontreg);
-    font-size: 64px;
+    font-size: 42px;
     font-weight: 800;
+
+    @media(min-width: 768px){
+        font-size: 52px;
+        margin-bottom: 50px;
+    }
+    
+    @media(min-width: 1200px){
+        font-size: 64px;
+        margin-bottom: 70px;
+    }
 }
 
 .section-sub-title{
