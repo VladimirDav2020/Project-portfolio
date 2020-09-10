@@ -230,12 +230,15 @@
     .button{
         width: 100%;
         font-size: 20px;
+        height: 64px;
         @media(min-width: 768px){
             
         }
         
         @media(min-width: 1200px){
             width: auto;
+            padding-left: 40px;
+            padding-right: 40px;
             font-size: 22px;
         }
     }
@@ -258,7 +261,7 @@
         }
     }
     
-    input{
+    .form-field{
         width: 100%;
         outline:none;
         border: none;
@@ -271,7 +274,7 @@
         font-weight: 700;
     }
 
-    textarea{
+    .form-textarea{
         outline:none;
         border: none;
         overflow: auto;
@@ -286,11 +289,6 @@
         font-size: 20px;
         font-weight: 700;
     } 
-    @media(min-width: 1200px){
-        input{
-            width: 100%;
-        }
-    }
 }
 
 .fake-placeholder{
@@ -312,4 +310,8 @@
     top: -20px;
 }
 
+.error{
+    font-size: 14px;
+    color: rgb(67, 102, 143);
+}
 

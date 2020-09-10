@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 // FORM PLACEHOLDER
 
-const formInputs = document.querySelectorAll('.form-field');
+const formInputs = document.querySelectorAll('.form-field, .form-textarea');
 console.log(formInputs);
 for(let item of formInputs){
     const thisPlaceholder = item.nextElementSibling;
@@ -57,3 +57,31 @@ for(let item of formInputs){
         } 
     });
 }
+
+// FORM VALIDATE
+$('#contact-form').validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        theme: {
+            required: true
+        },
+        message: {
+            required: true
+        }
+    },
+    messages: {
+        email: {
+            required: 'Введите email',
+            email: 'отсутсвует символ @'
+        },
+        theme: {
+            required: 'Введите тему сообщения'
+        },
+        message: {
+            required: 'Введите текст сообщения'
+        }
+    }
+})

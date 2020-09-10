@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="overlay"></div>
-    <header class="header none">
+    <header class="header">
         <nav class="header__nav">
             <a href="#" class="logo">ВД</a>
             <nav class="nav-list">
@@ -85,7 +85,7 @@
 
     <main >
         <!-- СЕКЦИЯ ПОРТФОЛИО -->
-        <section id="my-works" class="section-portfolio none">
+        <section id="my-works" class="section-portfolio">
             <div class="container">
                 <div class="block-content">
                     <h2 class="section-title bottom-line">Портфолио</h2>
@@ -147,7 +147,7 @@
         </section>
         <!-- //СЕКЦИЯ ПОРТФОЛИО -->
         <!-- СЕКЦИЯ КАК Я РАБОТАЮ -->
-        <section class="section-work none">
+        <section class="section-work">
             <div class="container">
                 <div class="title-wrapper">
                     <h2 class="section-title bottom-line">Как я работаю</h2>
@@ -215,7 +215,7 @@
 
         </section>
         <!-- //СЕКЦИЯ КАК Я РАБОТАЮ -->
-        <section class="section-contacts ">
+        <section class="section-contacts">
             <div class="container">
                 <div class="title-wrapper">
                     <h2 class="section-title bottom-line">Контакты</h2>
@@ -249,20 +249,21 @@
                         </div> 
                     </div>
                     <div class="form-wrapper">
-                        <form action="" class="contacts-form">
-                            <input type="hidden" name="project_name" value="project portfolio">
+                        <form action="" id="contact-form" class="contacts-form">
+                            <!-- <input type="hidden" name="project_name" value="project-portfolio.ru">
                             <input type="hidden" name="admin_email" value="davydyuk.2021@mail.ru">
-                            <input type="hidden" name="email_form" value="info@project-portfolio">
+                            <input type="hidden" name="email_form" value="info@project-portfolio"> -->
+
                             <div class="form-item">
-                                <input class="form-field" type="email">
+                                <input class="form-field" type="email" name="email">
                                 <span class="fake-placeholder">Ваш email</span>
                             </div>
                             <div class="form-item">
-                                <input class="form-field" type="text">
+                                <input class="form-field" type="text" name="theme">
                                 <span class="fake-placeholder">Тема письма</span>
                             </div>
                             <div class="form-item">
-                                <textarea class="form-field" type="text" name="" cols="" rows=""></textarea>
+                                <textarea class="form-textarea" name="message"></textarea>
                                 <span class="fake-placeholder">Сообщение</span>
                             </div>
                             <div class="form-item">
@@ -272,14 +273,13 @@
                         <div id="answer"></div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
-            <div class="footer__content">
-                <h4 class="copyright">&#169; 2020 &#8212; Владимир Давыдюк</h4>
+            <div class="copyright">&#169; 2020 &#8212; Владимир Давыдюк</div>
+            <div class="footer__text">
                 <p>
                     Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.
                 </p>
@@ -288,9 +288,10 @@
                 </p>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <!-- ПЛАГИНЫ И БИБЛИОТЕКИ -->
     <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/jquery.validate/jquery.validate.js"></script>
     <!-- МОИ СКРИПТЫ -->
     <script src="./js/main.js"></script>
 </body>

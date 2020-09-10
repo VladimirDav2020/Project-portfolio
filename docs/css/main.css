@@ -2095,10 +2095,13 @@ button {
 .form-item .button {
   width: 100%;
   font-size: 20px;
+  height: 64px;
 }
 @media (min-width: 1200px) {
   .form-item .button {
     width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 22px;
   }
 }
@@ -2113,7 +2116,7 @@ button {
     margin-bottom: 40px;
   }
 }
-.form-item input {
+.form-item .form-field {
   width: 100%;
   outline: none;
   border: none;
@@ -2124,7 +2127,7 @@ button {
   font-size: 20px;
   font-weight: 700;
 }
-.form-item textarea {
+.form-item .form-textarea {
   outline: none;
   border: none;
   overflow: auto;
@@ -2136,11 +2139,6 @@ button {
   font-family: var(--fontreg);
   font-size: 20px;
   font-weight: 700;
-}
-@media (min-width: 1200px) {
-  .form-item input {
-    width: 100%;
-  }
 }
 .fake-placeholder {
   position: absolute;
@@ -2162,24 +2160,43 @@ button {
   font-weight: 700;
   top: -20px;
 }
-.footer {
-  min-width: 320px;
-  padding: 40px 20px 40px 15px;
-  background-color: #333333;
+.error {
+  font-size: 14px;
+  color: #43668f;
 }
-.footer__content .copyright {
-  margin-bottom: 20px;
+.footer {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 35px 0;
+  background-color: #333333;
+  overflow: hidden;
+}
+.footer .copyright {
+  margin-bottom: 18px;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
 }
-.footer__content p {
+@media (min-width: 768px) {
+  .footer .copyright {
+    font-size: 18px;
+  }
+}
+.footer p {
   color: #b0b0b0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
 }
-.footer__content a {
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 18px;
+  }
+}
+.footer a {
   color: #b0b0b0;
   font-weight: 400;
   line-height: 1.5;
@@ -2189,12 +2206,16 @@ button {
   -moz-transition: .3s;
   transition: .3s;
 }
-.footer__content a:hover {
+.footer a:hover {
   text-decoration: none;
   -webkit-transition: .3s;
   -o-transition: .3s;
   -moz-transition: .3s;
   transition: .3s;
   color: #fff;
+}
+.footer__content {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
