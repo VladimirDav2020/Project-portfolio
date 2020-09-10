@@ -1832,14 +1832,16 @@ button {
   }
 }
 .section-contacts {
+  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
+  background-color: #f4f8f9;
 }
 @media (min-width: 768px) {
   .section-contacts {
-    padding-top: 90px;
+    padding-top: 72px;
     padding-bottom: 90px;
   }
 }
@@ -1855,20 +1857,42 @@ button {
     background-position: center;
   }
 }
+@media (min-width: 768px) {
+  .section-contacts .title-wrapper {
+    padding-left: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-contacts .title-wrapper {
+    padding-left: 0;
+  }
+}
 .section-contacts .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  font-size: 42px;
+}
+@media (min-width: 768px) {
+  .section-contacts .section-title {
+    margin-bottom: 52px;
+    font-size: 52px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-contacts .section-title {
+    font-size: 64px;
+  }
 }
 .contacts-text__top {
   font-size: 16px;
   color: #000000;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .contacts-text__top {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 }
 @media (min-width: 1200px) {
@@ -1882,7 +1906,7 @@ button {
 }
 @media (min-width: 768px) {
   .contacts-list {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -1892,7 +1916,12 @@ button {
 }
 .contacts-list-item {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+}
+@media (min-width: 768px) {
+  .contacts-list-item {
+    margin-bottom: 16px;
+  }
 }
 .contacts-list-item p {
   font-size: 18px;
@@ -1901,9 +1930,14 @@ button {
   line-height: 1.2;
   margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .contacts-list-item p {
+    margin-bottom: 4px;
+  }
+}
 .contacts-list-item a {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--linkhov);
   line-height: 1.2;
   font-weight: 500;
@@ -1925,6 +1959,11 @@ button {
   -moz-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
+@media (min-width: 1200px) {
+  .contacts-list-item a {
+    font-size: 20px;
+  }
+}
 .contacts-list-item a:hover {
   color: var(--titleimghov);
   -webkit-transition: 0.4s;
@@ -1939,11 +1978,6 @@ button {
   font-size: 20px;
   color: #96969d;
   line-height: 1.2;
-}
-@media (min-width: 768px) {
-  .contacts-list-item p {
-    margin-bottom: 0;
-  }
 }
 @media (min-width: 1200px) {
   .contacts-list-item {
@@ -1984,6 +2018,7 @@ button {
 @media (min-width: 1200px) {
   .contacts-text {
     width: 47%;
+    padding-top: 30px;
   }
   .contacts-text::before {
     content: '';
@@ -1995,12 +2030,24 @@ button {
     -moz-background-size: auto;
          background-size: auto;
     background-position: center;
-    top: -5%;
+    top: 2%;
     left: -65%;
   }
 }
-.contacts-form {
+.form-wrapper {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .form-wrapper {
+    width: 48%;
+  }
+}
+@media (min-width: 1200px) {
+  .form-wrapper {
+    width: 47%;
+  }
+}
+.contacts-form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2013,7 +2060,10 @@ button {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 60px 15px 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #fff;
   -webkit-box-shadow: 0 28px 40px #c2dbeb;
      -moz-box-shadow: 0 28px 40px #c2dbeb;
@@ -2021,15 +2071,16 @@ button {
 }
 @media (min-width: 768px) {
   .contacts-form {
-    width: 43%;
+    padding: 67px 25px 40px;
   }
 }
 @media (min-width: 1200px) {
   .contacts-form {
-    width: 47%;
+    padding: 88px 60px 40px;
   }
 }
 .form-item {
+  width: 100%;
   position: relative;
 }
 .form-item:nth-child(1) {
@@ -2041,7 +2092,29 @@ button {
 .form-item:nth-child(3) {
   margin-bottom: 20px;
 }
+.form-item .button {
+  width: 100%;
+  font-size: 20px;
+}
+@media (min-width: 1200px) {
+  .form-item .button {
+    width: auto;
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .form-item:nth-child(1) {
+    margin-bottom: 72px;
+  }
+  .form-item:nth-child(2) {
+    margin-bottom: 62px;
+  }
+  .form-item:nth-child(3) {
+    margin-bottom: 40px;
+  }
+}
 .form-item input {
+  width: 100%;
   outline: none;
   border: none;
   border-bottom: 2px solid #eaeaea;

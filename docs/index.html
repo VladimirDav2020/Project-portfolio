@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="overlay"></div>
-    <header class="header">
+    <header class="header none">
         <nav class="header__nav">
             <a href="#" class="logo">ВД</a>
             <nav class="nav-list">
@@ -85,7 +85,7 @@
 
     <main >
         <!-- СЕКЦИЯ ПОРТФОЛИО -->
-        <section id="my-works" class="section-portfolio">
+        <section id="my-works" class="section-portfolio none">
             <div class="container">
                 <div class="block-content">
                     <h2 class="section-title bottom-line">Портфолио</h2>
@@ -147,7 +147,7 @@
         </section>
         <!-- //СЕКЦИЯ ПОРТФОЛИО -->
         <!-- СЕКЦИЯ КАК Я РАБОТАЮ -->
-        <section class="section-work">
+        <section class="section-work none">
             <div class="container">
                 <div class="title-wrapper">
                     <h2 class="section-title bottom-line">Как я работаю</h2>
@@ -215,12 +215,12 @@
 
         </section>
         <!-- //СЕКЦИЯ КАК Я РАБОТАЮ -->
-        <section class="section-contacts none">
+        <section class="section-contacts ">
             <div class="container">
                 <div class="title-wrapper">
                     <h2 class="section-title bottom-line">Контакты</h2>
                 </div>
-                <div class="contacts-wrapper flex-wrapper">
+                <div class="flex-wrapper">
                     <div class="contacts-text">
                         <p class="contacts-text__top">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.</p>
                         <ul class="contacts-list">
@@ -230,7 +230,7 @@
                             </li>
                             <li class="contacts-list-item flex-wrapper">
                                 <p>Skype</p>
-                                <a target="_blank" href="">my skype</a>
+                                <a target="_blank" href="">davius33</a>
                             </li>
                             <li class="contacts-list-item flex-wrapper">
                                 <p>Телефон</p>
@@ -248,21 +248,29 @@
                             <a class="item-face" href="#"><i class="fab fa-facebook-f"></i></a>
                         </div> 
                     </div>
-                    <form action="" class="contacts-form">
-                        <div class="form-item">
-                            <input class="form-field" type="email">
-                            <span class="fake-placeholder">Ваш email</span>
-                        </div>
-                        <div class="form-item">
-                            <input class="form-field" type="text">
-                            <span class="fake-placeholder">Тема письма</span>
-                        </div>
-                        <div class="form-item">
-                            <textarea class="form-field" type="text" name="" cols="" rows=""></textarea>
-                            <span class="fake-placeholder">Сообщение</span>
-                        </div>
-                        <input class="button acquaint" type="submit">
-                    </form>
+                    <div class="form-wrapper">
+                        <form action="" class="contacts-form">
+                            <input type="hidden" name="project_name" value="project portfolio">
+                            <input type="hidden" name="admin_email" value="davydyuk.2021@mail.ru">
+                            <input type="hidden" name="email_form" value="info@project-portfolio">
+                            <div class="form-item">
+                                <input class="form-field" type="email">
+                                <span class="fake-placeholder">Ваш email</span>
+                            </div>
+                            <div class="form-item">
+                                <input class="form-field" type="text">
+                                <span class="fake-placeholder">Тема письма</span>
+                            </div>
+                            <div class="form-item">
+                                <textarea class="form-field" type="text" name="" cols="" rows=""></textarea>
+                                <span class="fake-placeholder">Сообщение</span>
+                            </div>
+                            <div class="form-item">
+                                <button type="submit" class="button acquaint">Отправить</button>
+                            </div>
+                        </form>
+                        <div id="answer"></div>
+                    </div>
                 </div>
 
             </div>
