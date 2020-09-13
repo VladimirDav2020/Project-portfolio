@@ -43,7 +43,7 @@
     }
     
     @media(min-width: 1200px){
-        margin-bottom: 152px;
+        margin-bottom: 142px;
         padding: 0;
     }
 }
@@ -105,7 +105,9 @@
     }
 
     @media(min-width: 768px){
-        
+        a{
+            margin-left: 0px;
+        }
     }
     
     @media(min-width: 1200px){
@@ -115,6 +117,7 @@
         height: auto;
         width: auto;
         max-width: unset;
+        padding-left: 21px;
         background-color: transparent;
         transform: translateX(0%);
 
@@ -137,9 +140,6 @@
     z-index: 2;
     display: block;
     text-decoration: none;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
     
     font-size: 20px;
     font-weight: 700;
@@ -174,7 +174,7 @@
 
     @media(min-width: 1200px){
         &+.nav-list-item{
-            margin-left: 40px;
+            margin-left: 79px;
         }
     }
 }
@@ -273,6 +273,10 @@
         color: #fbdc4d;
         transition: .5s;
     }
+    @media(min-width: 1200px){
+        padding-top: 11px
+    } 
+    
 }
 
 // ЛОГО____НАВИГАЦИЯ____СОЦИАЛ
@@ -319,7 +323,7 @@
     }
     
     @media(min-width: 1200px){
-        margin-bottom: 35px;
+        margin-bottom: 16px;
     }
 }
 
@@ -467,20 +471,21 @@
     }
     @media(min-width: 1200px){
         margin-bottom: 20px;
-        margin-top: -156px;
+        margin-top: -189px;
         transform: scale(1);
         max-width: 1600px;
     }
 }
+
 #my-skills{
 
     @media(min-width: 1200px){
-        margin-top: -230px;
-        padding-top: 280px;
+        margin-top: -385px;
+        padding-top: 350px;
     } 
 }
 
-.title{
+.about__skills-title{
     margin-bottom: 26px;
     color: #000000;
     font-size: 30px;
@@ -503,7 +508,7 @@
     }
     
     @media(min-width: 1200px){
-        
+        width: 53%;
     }
     .acquaint{
         display: none;
@@ -525,7 +530,7 @@
     }
     
     @media(min-width: 1200px){
-        margin-bottom: 52px;
+        margin-bottom: 40px;
     }
 }
 
@@ -553,20 +558,19 @@
 
 .about__social{
     width: 100%;
-    @media(min-width: 768px){
-        width: 46%;
-    
-    }
+
+    @media(min-width: 768px){width: 46%;}
     
     @media(min-width: 1200px){
-        width: 30%;
+        width: 32%;
+        
+        .about__skills-title{
+            margin-bottom: 32px;
+        }
     }
 }
 
 .custom::before{
-    @media(min-width: 768px){
-        
-    }
     @media(min-width: 1200px){
         content: "";
 
@@ -640,6 +644,7 @@
         background-color: #000;
         transition: .3s;
     }
+
     &:hover{
         color: var(--linkhov);
         transition: .3s;
@@ -649,5 +654,9 @@
         background-color: var(--linkhov);
         transition: .3s;
     }
+
+    @media(min-width: 1200px){
+        padding-left: 5px;
+    } 
 }
 // КОНТЕНТ ШАПКИ
