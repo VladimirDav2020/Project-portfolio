@@ -29,20 +29,79 @@
         
         @media(min-width: 1200px){
             padding-left: 0;
+            
         }
     }
-
+    .flex-wrapper{
+        padding-right: 20px;
+    }
     .section-title{
         margin-bottom: 40px;
         font-size: 42px;
         @media(min-width: 768px){
-            margin-bottom: 52px;
+            margin-bottom: 57px;
             font-size: 52px;
         }
         
         @media(min-width: 1200px){
             font-size: 64px;
         }
+    }
+}
+
+.contacts-text{
+    width: 100%;
+    position: relative;
+
+    @media(min-width: 768px){
+        width: 43%;
+        .social-list{
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+    }
+
+    @media(min-width: 1200px){
+        width: 46%;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 450px;
+            height: 280px;
+            background-image: url(../img/contacts/quote.png);
+            background-repeat: repeat-y;
+            background-size: auto;
+            background-position: center;
+            top: 2%;
+            left: -65%;
+        }
+    }
+}
+.form-wrapper{
+    width: 100%;
+    @media(min-width: 768px){
+        width: 48%;
+    }
+    @media(min-width: 1200px){
+        width: 46%;
+    
+    }
+}
+.contacts-form{
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 28px 40px #c2dbeb;
+
+    @media(min-width: 768px){
+        padding: 67px 25px 40px;
+    }
+    @media(min-width: 1200px){
+        padding: 77px 60px 40px;
     }
 }
 
@@ -60,8 +119,8 @@
 
     @media(min-width: 1200px){
         font-size: 20px;
-        margin-bottom: 50px;
-        
+        margin-bottom: 43px;
+        padding-top: 22px;
     }
 }
 
@@ -92,6 +151,7 @@
         font-weight: bold;
         line-height: 1.2;
         margin-bottom: 10px;
+
         @media(min-width: 768px){            
             margin-bottom: 4px;  
         }
@@ -128,93 +188,35 @@
         &:hover:after{
             width: 100%;
         }
-
-         
-}
+    
+    }
 
     .gray{
         font-size: 20px;
         color: rgb(150, 150, 157);
         line-height: 1.2;
     }
-    @media(min-width: 768px){
-    }
 
     @media(min-width: 1200px){
         display: flex;
         justify-content: flex-start;
-        margin-bottom: 38px;
+        margin-bottom: 28px;
         &:last-child{
             margin-bottom: 0;
         }
             p:first-child{
                 min-width: 95px;
-                margin-right: 80px;
+                margin-right: 100px;
                 font-size: 20px;
                 margin-bottom: 0;
             }
         }
 }
 
-.contacts-text{
-    width: 100%;
-    position: relative;
-
-    @media(min-width: 768px){
-        width: 43%;
-        .social-list{
-            margin-bottom: 0;
-        }
-    }
-
-    @media(min-width: 1200px){
-        width: 47%;
-        padding-top: 30px;
-        &::before{
-            content: '';
-            position: absolute;
-            width: 450px;
-            height: 280px;
-            background-image: url(../img/contacts/quote.png);
-            background-repeat: repeat-y;
-            background-size: auto;
-            background-position: center;
-            top: 2%;
-            left: -65%;
-        }
-    }
-}
-.form-wrapper{
-    width: 100%;
-    @media(min-width: 768px){
-        width: 48%;
-    }
-    @media(min-width: 1200px){
-        width: 47%;
-    
-    }
-}
-.contacts-form{
-    display: flex;
-    flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background-color: #fff;
-    box-shadow: 0 28px 40px #c2dbeb;
-
-    @media(min-width: 768px){
-        padding: 67px 25px 40px;
-    }
-    @media(min-width: 1200px){
-        padding: 88px 60px 40px;
-    }
-}
-
 .form-item{
     width: 100%;
     position: relative;
+
     &:nth-child(1){
         margin-bottom: 45px;
     }
@@ -237,23 +239,19 @@
         
         @media(min-width: 1200px){
             width: auto;
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-left: 36px;
+            padding-right: 36px;
             font-size: 22px;
         }
     }
     
-    @media(min-width: 768px){
-    
-    }
-    
     @media(min-width: 1200px){
         &:nth-child(1){
-            margin-bottom: 72px;
+            margin-bottom: 64px;
         }
     
         &:nth-child(2){
-            margin-bottom: 62px;
+            margin-bottom: 55px;
         }
     
         &:nth-child(3){
@@ -266,7 +264,7 @@
         outline:none;
         border: none;
         border-bottom:2px solid #eaeaea;
-        padding-bottom: 8px;
+        padding-bottom: 11px;
     
         color: #000000;
         font-family: var(--fontreg);
