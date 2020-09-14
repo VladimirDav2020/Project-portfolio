@@ -64,6 +64,32 @@ body {
   position: relative;
   font-family: var(--fontreg);
 }
+#page-nav {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  z-index: 100;
+}
+#page-nav li {
+  width: 12px;
+  height: 12px;
+  background-color: #89b4cb;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  margin-bottom: 15px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+#page-nav li.active {
+  background-color: var(--red);
+}
 .noscroll {
   overflow: hidden;
 }
@@ -748,6 +774,10 @@ button {
   margin-right: 20px;
   color: #000;
   text-decoration: none;
+  -webkit-transition: .7s;
+  -o-transition: .7s;
+  -moz-transition: .7s;
+  transition: .7s;
 }
 .nav-social-item:last-child {
   margin-right: 0;
@@ -761,9 +791,17 @@ button {
 }
 .nav-social-item:first-child:hover {
   color: #4ac85a;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
 }
 .nav-social-item:last-child:hover {
   color: #4d76a1;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
 }
 @media (min-width: 1200px) {
   .nav-social-item {
@@ -1162,7 +1200,7 @@ button {
   transition: .5s;
 }
 .item-vk:hover {
-  background-color: #fbdc4d;
+  background-color: #6daff7;
   -webkit-transition: .5s;
   -o-transition: .5s;
   -moz-transition: .5s;
@@ -1181,7 +1219,7 @@ button {
   transition: .5s;
 }
 .item-face:hover {
-  background-color: #fbdc4d;
+  background-color: #4c83fc;
   -webkit-transition: .5s;
   -o-transition: .5s;
   -moz-transition: .5s;
