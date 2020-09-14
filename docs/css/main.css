@@ -64,6 +64,31 @@ body {
   position: relative;
   font-family: var(--fontreg);
 }
+.noscroll {
+  overflow: hidden;
+}
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 4;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+#overlay.active {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
 #page-nav {
   display: none;
 }
@@ -95,31 +120,6 @@ body {
   #page-nav li.active {
     background-color: var(--red);
   }
-}
-.noscroll {
-  overflow: hidden;
-}
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.15);
-  z-index: 2;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
-}
-#overlay.active {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.15);
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
 }
 a,
 a:hover {
@@ -430,6 +430,7 @@ button {
 @media (min-width: 768px) {
   .header__nav {
     padding: 0 30px;
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -488,7 +489,7 @@ button {
   padding-top: 30px;
   padding-left: 17px;
   background-color: #fff;
-  z-index: 5;
+  z-index: 15;
   -webkit-transform: translateX(100%);
      -moz-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -593,7 +594,7 @@ button {
 }
 .nav-list-item {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   display: block;
   text-decoration: none;
   font-size: 20px;
@@ -702,7 +703,7 @@ button {
   display: flex;
   cursor: pointer;
   position: relative;
-  z-index: 6;
+  z-index: 10;
 }
 .toggle-menu span {
   width: 100%;
@@ -859,8 +860,8 @@ button {
 }
 @media (min-width: 768px) {
   .header__content-text {
-    width: 49%;
-    max-width: 335px;
+    width: 52%;
+    max-width: 375px;
   }
 }
 @media (min-width: 1200px) {
@@ -875,11 +876,13 @@ button {
 @media (min-width: 768px) {
   .header__content-text h1 {
     margin-bottom: 30px;
+    padding-top: 20px;
   }
 }
 @media (min-width: 1200px) {
   .header__content-text h1 {
     margin-bottom: 16px;
+    padding-top: 0px;
   }
 }
 .header__content-text p {
@@ -963,12 +966,13 @@ button {
   max-width: 290px;
   height: auto;
   margin-bottom: 60px;
+  z-index: -1;
 }
 .header__content-photo::after {
   content: '';
   position: absolute;
   display: block;
-  z-index: -1;
+  z-index: -3;
   width: 100%;
   height: 100%;
   top: 8%;
