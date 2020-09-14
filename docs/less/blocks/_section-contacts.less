@@ -1,12 +1,12 @@
 .section-contacts{
     min-width: 320px;
-    margin-right: auto;
-    margin-left: auto;
     padding-top: 40px;
     padding-bottom: 60px; 
     background-color: #f4f8f9;
 
     @media(min-width: 768px){
+        margin-right: auto;
+        margin-left: auto;
         padding-top: 72px;
         padding-bottom: 90px;
     }
@@ -23,6 +23,7 @@
 
     .title-wrapper{
         
+
         @media(min-width: 768px){
             padding-left: 33px;
         }
@@ -33,7 +34,9 @@
         }
     }
     .flex-wrapper{
-        padding-right: 20px;
+        padding-right: 0;
+        @media(min-width: 1200px)
+        {padding-right: 20px;}
     }
     .section-title{
         margin-bottom: 40px;
@@ -52,12 +55,20 @@
 .contacts-text{
     width: 100%;
     position: relative;
-
+    .social-list{
+        a{
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
     @media(min-width: 768px){
         width: 43%;
         .social-list{
             margin-bottom: 0;
             padding-left: 0;
+            
         }
     }
 

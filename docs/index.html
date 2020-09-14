@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div id="overlay"></div>
     <ul id="page-nav">
         <li class="active">
             <a href="#header"></a>
@@ -25,9 +26,8 @@
             <a href="#contacts"></a>
         </li>
     </ul>
-    <div id="overlay"></div>
-    <header id="header" class="header">
-        <nav class="header__nav" data-aos="fade-down" data-aos-duration="1600">
+    <header id="header" class="header" >
+        <nav class="header__nav" >
             <a href="https://vk.com/id299021543" target="_blank" class="logo">ВД</a>
             <nav class="nav-list">
                 <div class="logo-mob">
@@ -58,8 +58,10 @@
         </nav>
         <div class="container">
             <div class="header__content">
-                <div class="header__content-photo" data-aos="fade-left" data-aos-duration="1500">
-                    <img src="./img/header/myphoto.jpg" alt="Владимир">
+                <div class="header__content-photo">
+                    <img data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"src="./img/header/myphoto.jpg" alt="Владимир">
                 </div>
                 <div class="header__content-text">
                     <h1 data-aos="fade-right" data-aos-duration="1000"><span class="header-title">Владимир</span><br><span class="header-title">Давыдюк</span></h1>
@@ -90,7 +92,7 @@
                     </ul>
                     <a href="#portfolio" class="button acquaint">Смотреть работы</a>
                 </div>
-                <div class="about__social" data-aos="fade-left" data-aos-duration="1200" data-aos-offset="300">
+                <div class="about__social" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-offset="300">
                     <h3 class="about__skills-title">На связи:</h3>
                     <div class="social-list">
                         <a class="item-git" href="https://github.com/VladimirDav2020" target="_blank"><i class="fab fa-github fa-2x"></i></a>
@@ -114,7 +116,7 @@
                         <button class="section-portfolio__sub-title control-active" data-filter="all" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">Все работы</button>
                         <button  class="section-portfolio__sub-title" data-filter=".boots" data-aos="fade-up" data-aos-duration="1000"data-aos-offset="300">Bootstrap</button>
                         <button  class="section-portfolio__sub-title" data-filter=".wp" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">WordPress</button>
-                        <button  class="section-portfolio__sub-title" data-filter=".frontend" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">Frontend</button>
+                        <button  class="section-portfolio__sub-title" data-filter=".frontend" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300">Frontend</button>
                     </div>
                     <div id="portfolio-project" class="section-portfolio__content">
                         <div class="content-top">
@@ -190,7 +192,7 @@
                         <div class="work-item__icon">
                             <img src="./img/work/work-icon-2.png" alt="">
                         </div>
-                        <div class="work-item__text" data-aos="fade-down-left" data-aos-duration="1000" data-aos-offset="200" >
+                        <div class="work-item__text" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="200" >
                             <h3 class="work-item__text-title bottom-line">ТЗ, смета и график работ</h3>
                             <p class="work-item__text-info">Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
                             <p class="work-item__text-time">Время: 2 - 4 часа</p>
@@ -212,7 +214,7 @@
                         <div class="work-item__icon">
                             <img src="./img/work/work-icon-4.png" alt="">
                         </div>
-                        <div class="work-item__text" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
+                        <div class="work-item__text" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="200">
                             <h3 class="work-item__text-title bottom-line">Выполняю каждый этап</h3>
                             <p class="work-item__text-info">Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
                             <p class="work-item__text-time">Время: 2 - 4 часа</p>
@@ -223,7 +225,7 @@
                         <div class="work-item__icon">
                             <img src="./img/work/work-icon-5.png" alt="">
                         </div>
-                        <div class="work-item__text" data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="200">
+                        <div class="work-item__text" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-offset="200">
                             <h3 class="work-item__text-title bottom-line">Финальное ревью проекта</h3>
                             <p class="work-item__text-info">Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
                             <p class="work-item__text-time">Время: 2 - 4 часа</p>
@@ -237,13 +239,13 @@
         </section>
         <!-- //СЕКЦИЯ КАК Я РАБОТАЮ -->
         <!-- Секция с формой -->
-        <section id="contacts" class="section-contacts">
+        <section id="contacts" class="section-contacts ">
             <div class="container">
                 <div class="title-wrapper">
                     <h2 class="section-title bottom-line">Контакты</h2>
                 </div>
                 <div class="flex-wrapper">
-                    <div class="contacts-text" data-aos="flip-down" data-aos-duration="1500"data-aos-offset="300">
+                    <div class="contacts-text" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-offset="200">
                         <p class="contacts-text__top">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.</p>
                         <ul class="contacts-list">
                             <li class="contacts-list-item flex-wrapper">
@@ -271,7 +273,7 @@
                         </div> 
                     </div>
                     <div class="form-wrapper">
-                        <form action="" id="contact-form" class="contacts-form" data-aos="flip-left" data-aos-duration="1500"data-aos-offset="300">
+                        <form action="" id="contact-form" class="contacts-form" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-offset="200">
                             <!-- <input type="hidden" name="project_name" value="project-portfolio.ru">
                             <input type="hidden" name="admin_email" value="davydyuk.2021@mail.ru">
                             <input type="hidden" name="email_form" value="info@project-portfolio"> -->
@@ -292,12 +294,13 @@
                                 <button type="submit" class="button acquaint">Отправить</button>
                             </div>
                         </form>
-                        <div id="answer"></div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- //Секция с формой -->
+        <!-- data-aos="flip-down" data-aos-duration="1500"data-aos-offset="300" -->
+        <!-- data-aos="flip-left" data-aos-duration="1500"data-aos-offset="300" -->
     </main>
     <footer class="footer">
         <div class="container">

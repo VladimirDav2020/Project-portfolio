@@ -75,7 +75,7 @@ body {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.15);
-  z-index: 4;
+  z-index: 3;
   -webkit-transition: .5s;
   -o-transition: .5s;
   -moz-transition: .5s;
@@ -98,7 +98,7 @@ body {
     position: fixed;
     right: 50px;
     top: 50%;
-    z-index: 100;
+    z-index: 5;
   }
   #page-nav li {
     width: 12px;
@@ -374,6 +374,9 @@ button {
             justify-content: space-between;
   }
 }
+.none {
+  display: none;
+}
 .header {
   width: 100%;
   min-width: 320px;
@@ -489,18 +492,19 @@ button {
   padding-top: 30px;
   padding-left: 17px;
   background-color: #fff;
-  z-index: 15;
   -webkit-transform: translateX(100%);
      -moz-transform: translateX(100%);
       -ms-transform: translateX(100%);
        -o-transform: translateX(100%);
           transform: translateX(100%);
+  z-index: 5;
   -webkit-transition: .5s;
   -o-transition: .5s;
   -moz-transition: .5s;
   transition: .5s;
 }
 .nav-list .logo-mob {
+  z-index: 4;
   margin-bottom: 40px;
 }
 .nav-list a {
@@ -703,7 +707,7 @@ button {
   display: flex;
   cursor: pointer;
   position: relative;
-  z-index: 10;
+  z-index: 5;
 }
 .toggle-menu span {
   width: 100%;
@@ -966,13 +970,12 @@ button {
   max-width: 290px;
   height: auto;
   margin-bottom: 60px;
-  z-index: -1;
 }
 .header__content-photo::after {
   content: '';
   position: absolute;
   display: block;
-  z-index: -3;
+  z-index: -1;
   width: 100%;
   height: 100%;
   top: 8%;
@@ -1820,19 +1823,21 @@ button {
   }
 }
 .section-work__content {
-  min-width: 320px;
+  max-width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 @media (min-width: 768px) {
   .section-work__content {
     padding-right: 0px;
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
   .section-work__content {
-    width: 1005px;
+    width: 100%;
+    max-width: 1005px;
   }
 }
 .work-item {
@@ -2076,14 +2081,14 @@ button {
 }
 .section-contacts {
   min-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: #f4f8f9;
 }
 @media (min-width: 768px) {
   .section-contacts {
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 72px;
     padding-bottom: 90px;
   }
@@ -2111,7 +2116,12 @@ button {
   }
 }
 .section-contacts .flex-wrapper {
-  padding-right: 20px;
+  padding-right: 0;
+}
+@media (min-width: 1200px) {
+  .section-contacts .flex-wrapper {
+    padding-right: 20px;
+  }
 }
 .section-contacts .section-title {
   margin-bottom: 40px;
@@ -2131,6 +2141,12 @@ button {
 .contacts-text {
   width: 100%;
   position: relative;
+}
+.contacts-text .social-list a {
+  margin-right: 30px;
+}
+.contacts-text .social-list a:last-child {
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .contacts-text {
