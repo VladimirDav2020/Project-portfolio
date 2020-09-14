@@ -37,26 +37,34 @@ $(document).ready(function(){
         overlaeyEl.classList.remove('active');
         bodyEl.classList.remove('noscroll');
     });
-})
 
-// FORM PLACEHOLDER
+    // FORM PLACEHOLDER
+    const formInputs = document.querySelectorAll('.form-field, .form-textarea');
+    console.log(formInputs);
+    for(let item of formInputs){
+        const thisPlaceholder = item.nextElementSibling;
+        console.log(thisPlaceholder);
+    
+        item.addEventListener('focus', function(){
+            thisPlaceholder.classList.add('active');
+        });
+    
+        item.addEventListener('blur', function(){
+            if(item.value == ''){
+                thisPlaceholder.classList.remove('active');
+            } 
+        });
+    }
 
-const formInputs = document.querySelectorAll('.form-field, .form-textarea');
-console.log(formInputs);
-for(let item of formInputs){
-    const thisPlaceholder = item.nextElementSibling;
-    console.log(thisPlaceholder);
+    // MixItUp3
+    let containerEl = document.querySelector("#portfolio-project");
 
-    item.addEventListener('focus', function(){
-        thisPlaceholder.classList.add('active');
+    let mixer = mixitup(containerEl, {
+        classNames: {
+            block: ""
+        }
     });
-
-    item.addEventListener('blur', function(){
-        if(item.value == ''){
-            thisPlaceholder.classList.remove('active');
-        } 
-    });
-}
+});
 
 // FORM VALIDATE
 $('#contact-form').validate({
@@ -85,3 +93,6 @@ $('#contact-form').validate({
         }
     }
 })
+
+
+

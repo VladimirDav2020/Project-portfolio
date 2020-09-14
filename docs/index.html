@@ -94,14 +94,14 @@
                 <div class="block-content">
                     <h2 class="section-title bottom-line">Портфолио</h2>
                     <div class="section-portfolio__platform">
-                        <a href="#" class="section-portfolio__sub-title black">Все работы</a>
-                        <a href="#" class="section-portfolio__sub-title">Bootstrap</a>
-                        <a href="#" class="section-portfolio__sub-title">WordPress</a>
-                        <a href="#" class="section-portfolio__sub-title">Frontend</a>
+                        <button class="section-portfolio__sub-title control-active" data-filter="all">Все работы</button>
+                        <button  class="section-portfolio__sub-title" data-filter=".boots">Bootstrap</button>
+                        <button  class="section-portfolio__sub-title" data-filter=".wp">WordPress</button>
+                        <button  class="section-portfolio__sub-title" data-filter=".frontend">Frontend</button>
                     </div>
-                    <div class="section-portfolio__content">
+                    <div id="portfolio-project" class="section-portfolio__content">
                         <div class="content-top">
-                            <div class="content-top-item">
+                            <div class="content-top-item mix boots frontend">
                                 <a class="portfolio-img-link" href="#">
                                     <img src="./img/portfoli/img-1.jpg" alt="Forest Travel">
                                     <button class="more-button">Смотреть проект</button>
@@ -109,7 +109,7 @@
                                 <a class="content__title" href="#">Верстка “Форест тревел”</a>
                                 <h4 class="content__sub-title ">Верстка многостраничного сайта.</h4>
                             </div>
-                            <div class="content-top-item">
+                            <div class="content-top-item mix boots frontend">
                                 <a class="portfolio-img-link" href="#">
                                     <img src="./img/portfoli/img-2.jpg" alt="Project Unit">
                                     <button class="more-button">Смотреть проект</button>
@@ -119,23 +119,23 @@
                             </div>
                         </div>
                         <div class="content-bottom">
-                            <div class="content-bottom-item">
+                            <div class="content-bottom-item mix wp">
                                 <a class="portfolio-img-link" href="#">
-                                    <img src="./img/portfoli/img-3.jpg" alt="Forest Travel">
+                                    <img src="./img/portfoli/img-3.jpg" alt="Карточка с товаром">
                                     <button class="more-button">Смотреть проект</button>
                                 </a>
                                 <a class="content__title" href="#">Верстка карточки</a>
                                 <h4 class="content__sub-title">Верстка карточки с товаром.</h4>
                             </div>
-                            <div class="content-bottom-item">
+                            <div class="content-bottom-item mix wp">
                                 <a class="portfolio-img-link" href="#">
-                                    <img src="./img/portfoli/img-4.jpg" alt="Forest Travel">
+                                    <img src="./img/portfoli/img-4.jpg" alt="Карточка с товаром">
                                     <button class="more-button">Смотреть проект</button>
                                 </a>
                                 <a class="content__title" href="#">Верстка карточки</a>
                                 <h4 class="content__sub-title">Верстка карточки с товаром.</h4>
                             </div>
-                            <div class="content-bottom-item">
+                            <div class="content-bottom-item mix wp frontend">
                                 <a class="portfolio-img-link" href="#">
                                     <img src="./img/portfoli/img-5.jpg" alt="Forest Travel">
                                     <button class="more-button">Смотреть проект</button>
@@ -296,6 +296,7 @@
     <!-- ПЛАГИНЫ И БИБЛИОТЕКИ -->
     <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="./libs/jquery.validate/jquery.validate.js"></script>
+    <script src="./libs/mixitup3/mixitup.min.js"></script>
     <!-- МОИ СКРИПТЫ -->
     <script src="./js/main.js"></script>
 </body>

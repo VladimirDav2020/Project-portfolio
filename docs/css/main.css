@@ -1277,10 +1277,10 @@ button {
     display: flex;
     margin-bottom: 50px;
   }
-  .section-portfolio__platform .black {
+  .section-portfolio__platform .control-active {
     color: #000;
   }
-  .section-portfolio__platform .black:hover {
+  .section-portfolio__platform .control-active:hover {
     color: #000;
   }
 }
