@@ -19,34 +19,6 @@ $(document).ready(function(){
         });
     }
 
-    // FORM VALIDATE
-    $('#contact-form').validate({
-        rules: {
-            email: {
-                required: true,
-                email: true
-            },
-            theme: {
-                required: true
-            },
-            message: {
-                required: true
-            }
-        },
-        messages: {
-            email: {
-                required: 'Введите email',
-                email: 'отсутсвует символ @'
-            },
-            theme: {
-                required: 'Введите тему сообщения'
-            },
-            message: {
-                required: 'Введите текст сообщения'
-            }
-        }
-    });
-
     // MixItUp3
     let containerEl = document.querySelector("#portfolio-project");
 
