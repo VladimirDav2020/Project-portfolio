@@ -924,7 +924,7 @@ button {
   .header-title {
     font-size: 52px;
   }
-  .header-title:after {
+  .header-title::after {
     bottom: 12px;
   }
 }

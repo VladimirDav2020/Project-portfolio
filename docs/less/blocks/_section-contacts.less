@@ -22,16 +22,9 @@
     }
 
     .title-wrapper{
+        @media(min-width: 768px){padding-left: 33px;}
         
-
-        @media(min-width: 768px){
-            padding-left: 33px;
-        }
-        
-        @media(min-width: 1200px){
-            padding-left: 0;
-            
-        }
+        @media(min-width: 1200px){padding-left: 0;}
     }
     .flex-wrapper{
         padding-right: 0;
@@ -46,9 +39,7 @@
             font-size: 52px;
         }
         
-        @media(min-width: 1200px){
-            font-size: 64px;
-        }
+        @media(min-width: 1200px){font-size: 64px;}
     }
 }
 
@@ -71,7 +62,6 @@
             
         }
     }
-
     @media(min-width: 1200px){
         width: 46%;
         &::before{
@@ -91,14 +81,11 @@
 
 .form-wrapper{
     width: 100%;
-    @media(min-width: 768px){
-        width: 48%;
-    }
-    @media(min-width: 1200px){
-        width: 46%;
-    
-    }
+    @media(min-width: 768px){width: 48%;}
+
+    @media(min-width: 1200px){width: 46%;}
 }
+
 .contacts-form{
     height: 100%;
     padding-right: 15px;
@@ -108,12 +95,9 @@
     background-color: #fff;
     box-shadow: 0 28px 40px #c2dbeb;
 
-    @media(min-width: 768px){
-        padding: 67px 25px 40px;
-    }
-    @media(min-width: 1200px){
-        padding: 77px 60px 40px;
-    }
+    @media(min-width: 768px){padding: 67px 25px 40px;}
+
+    @media(min-width: 1200px){padding: 77px 60px 40px;}
 }
 
 .form-item{
@@ -132,11 +116,7 @@
     .button{
         width: 100%;
         font-size: 20px;
-        height: 64px;
-        @media(min-width: 768px){
-            
-        }
-        
+        height: 64px;        
         @media(min-width: 1200px){
             width: auto;
             padding-left: 36px;
@@ -174,6 +154,7 @@
         font-weight: 700;
     } 
 }
+
 .contacts-text__top{
     font-size: 16px;
     color: rgb(0, 0, 0);
@@ -195,24 +176,16 @@
 
 .contacts-list{
     margin-bottom: 40px;
+    @media(min-width: 768px){margin-bottom: 30px;}
 
-    @media(min-width: 768px){
-        margin-bottom: 30px;
-    }
-
-    @media(min-width: 1200px){
-        margin-bottom: 48px;
-        
-    }
+    @media(min-width: 1200px){margin-bottom: 48px;}
 }
 
 .contacts-list-item{
     display: block;
     margin-bottom: 21px;
 
-    @media(min-width: 768px){            
-        margin-bottom: 16px; 
-    } 
+    @media(min-width: 768px){margin-bottom: 16px;} 
 
     p{
         font-size: 18px;
@@ -227,7 +200,6 @@
     }
     .email{
         padding: 0;
-
         &:after{
             background-color: var(--titleimghov);
             transition: width 0.4s ease-in-out;
@@ -253,18 +225,14 @@
             transition: width 0.4s ease-in-out;
         }
 
-        @media(min-width: 1200px){
-            font-size: 20px;
-        }
+        @media(min-width: 1200px){font-size: 20px;}
 
         &:hover{
             color: var(--titleimghov);
             transition: 0.4s;
         }
     
-        &:hover:after{
-            width: 100%;
-        }
+        &:hover:after{width: 100%;}
     
     }
 
@@ -313,4 +281,3 @@
     font-size: 14px;
     color: rgb(67, 102, 143);
 }
-

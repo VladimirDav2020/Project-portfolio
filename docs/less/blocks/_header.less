@@ -100,17 +100,11 @@
         margin-bottom: 40px;
     }
 
-    a{
-        margin-left: 15px;
-    }
+    a{margin-left: 15px;}
 
-    .item-desktop{
-        display: none;
-    }
+    .item-desktop{display: none;}
 
-    .item-mob{
-        display: block;
-    }
+    .item-mob{display: block;}
 
     .email{
         color: var(--blue);
@@ -134,9 +128,8 @@
     
     @media(min-width: 768px){
         padding-left: 30px;
-        a{
-            margin-left: 0px;
-        }
+
+        a{margin-left: 0px;}
     }
     // Десктоп навигация
     @media(min-width: 1200px){
@@ -150,28 +143,18 @@
         background-color: transparent;
         transform: translateX(0%);
 
-        .item-desktop{
-            display: block;
-        }
+        .item-desktop{display: block;}
 
-        .item-mob{
-            display: none;
-        }
+        .item-mob{display: none;}
 
-        .email{
-            display: none;
-        }
+        .email{display: none;}
 
-        .logo-mob{
-            display: none;
-        }
+        .logo-mob{display: none;}
     }
 }
 // Мобильная навигация
-.nav-list.active{
-    transform: translateX(0%);
-}
-// Мобильная навигация
+.nav-list.active{transform: translateX(0%);}
+
 .nav-list-item{
     position: relative;
     z-index: 4;
@@ -186,9 +169,7 @@
     width: fit-content;
     transition: .3s;
 
-    &:nth-last-child(2){
-        margin-bottom: 40px;
-    }
+    &:nth-last-child(2){margin-bottom: 40px;}
 
     &::after{
         content: "";
@@ -219,12 +200,10 @@
 // Десктоп навигация
     @media(min-width: 1200px){
         margin-bottom: 0;
-        &:nth-last-child(2){
-            margin-bottom: 0px;
-        }
-        &+.nav-list-item{
-            margin-left: 79px;
-        }
+
+        &:nth-last-child(2){margin-bottom: 0px;}
+
+        &+.nav-list-item{margin-left: 79px;}
 
         &::after{
             content: "";
@@ -251,20 +230,15 @@
         margin-right: 0;
         margin-bottom: 20px;
 
-        &:last-child{
-            margin-bottom: 0;
-        }
+        &:last-child{margin-bottom: 0;}
 
     }
     @media(min-width: 768px){
-         a{
-            margin-right: 20px;
-        }
+
+         a{margin-right: 20px;}
     }
 
-    @media(min-width: 1200px){
-        display: none;
-    }
+    @media(min-width: 1200px){display: none;}
 }
 // Бургер меню
 .toggle-menu{
@@ -293,37 +267,24 @@
             transition: .3s;
         }
 
-        &::after{
-            transform: translateY(10px);
-        }
+        &::after{transform: translateY(10px);}
 
-        &::before{
-            transform: translateY(-10px);
-        }
+        &::before{transform: translateY(-10px);}
     }
 // Десктоп навигация
-    @media(min-width: 1200px){
-        display: none;
-    }
+    @media(min-width: 1200px){display: none;}
 }
 // Бургер меню
-.active span{
-    height: 0;
-}
-.active span::before{
-    transform: rotate(45deg);
-}
-.active span::after{
-    transform: rotate(-45deg);
-}
+.active span{height: 0;}
+
+.active span::before{transform: rotate(45deg);}
+
+.active span::after{transform: rotate(-45deg);}
 
 .nav-social{
     display: none;
-    
-    @media(min-width: 1200px){
-        display: flex;
-        
-    }
+
+    @media(min-width: 1200px){display: flex;}
 }
 
 .nav-social-item{
@@ -333,9 +294,7 @@
     text-decoration: none;
     transition: .7s;
 
-    &:last-child{
-        margin-right: 0;
-    }
+    &:last-child{margin-right: 0;}
 
     &:hover{
         color: #fbdc4d;
@@ -349,9 +308,7 @@
         color: #4d76a1;
         transition: .5s;
     }
-    @media(min-width: 1200px){
-        padding-top: 11px
-    }    
+    @media(min-width: 1200px){padding-top: 11px}    
 }
 // ЛОГО____НАВИГАЦИЯ____СОЦИАЛ
 
@@ -368,9 +325,7 @@
         flex-direction: row-reverse;
     }
 
-    @media(min-width: 1200px){
-        padding: 0px;
-    }  
+    @media(min-width: 1200px){padding: 0px;}  
 }
 
 .header__content-text{
@@ -435,34 +390,27 @@
     @media(min-width: 768px){
         font-size: 52px;
 
-        &:after{
-            bottom: 12px;
-        }
+        &::after{bottom: 12px;}
     }
     @media(min-width: 1200px){
         font-size: 90px;
 
-        &:after{
-            bottom: 22px; 
-        }
+        &:after{bottom: 22px;}
     }
 }
 
 .buttons{  
     display: none;
-    @media(min-width: 768px){
-        display: none;
-    }
+
+    @media(min-width: 768px){display: none;}
+
     @media(min-width: 1200px){
         display: flex;
         align-items: center;
 
-        .button{
-            margin-right: 20px;
-        }
-        .button:last-child{
-            margin-right: 0;
-        }
+        .button{margin-right: 20px;}
+
+        .button:last-child{margin-right: 0;}
     }
 }
 
@@ -527,16 +475,15 @@
     margin-bottom: 100px;
     transform: scale(1.8);
 
-    @media(min-width: 425px){
-        transform: scale(1.5);  
-    }
-    @media(min-width: 576px){
-        transform: scale(1.2);
-    }
+    @media(min-width: 425px){transform: scale(1.5);}
+
+    @media(min-width: 576px){transform: scale(1.2);}
+
     @media(min-width: 768px){
         margin-top: -116px;
         transform: scale(1);
     }
+
     @media(min-width: 1200px){
         margin-bottom: 20px;
         margin-top: -189px;
@@ -558,39 +505,28 @@
     font-size: 30px;
     font-weight: 800;
 
-    @media(min-width: 768px){
-        font-size: 32px;
-    }
+    @media(min-width: 768px){font-size: 32px;}
     
-    @media(min-width: 1200px){
-        font-size: 40px;
-    }
+    @media(min-width: 1200px){font-size: 40px;}
 }
 
 .about__skills{
     width: 100%;
 
-    @media(min-width: 768px){
-        width: 48%;
-    }
+    @media(min-width: 768px){width: 48%;}
     
-    @media(min-width: 1200px){
-        width: 53%;
-    }
+    @media(min-width: 1200px){width: 53%;}
+
     .acquaint{
         display: none;
         
-        @media(min-width: 1200px){
-            display: inline-block;
-        }  
+        @media(min-width: 1200px){display: inline-block;}  
     }   
 }
 .about__skills-list{
     margin-bottom: 45px;
     
-    @media(min-width: 1200px){
-        margin-bottom: 40px;
-    }
+    @media(min-width: 1200px){margin-bottom: 40px;}
 }
 
 .list-item{
@@ -600,9 +536,7 @@
     font-size: 18px;
     font-weight: 400;
 
-    &:last-child{
-        margin-bottom: 0;
-    }
+    &:last-child{margin-bottom: 0;}
     
     @media(min-width: 1200px){
         font-size: 24px;
@@ -619,9 +553,7 @@
     @media(min-width: 1200px){
         width: 32%;
         
-        .about__skills-title{
-            margin-bottom: 32px;
-        }
+        .about__skills-title{margin-bottom: 32px;}
     }
 }
 
