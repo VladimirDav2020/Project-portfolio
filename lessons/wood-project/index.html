@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood-Ptoject</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- Верхняя часть шапки -->
+        <nav class="header__navigation">
+            <div class="header__navigation-menu">
+                <a href="#" class="burger-menu">
+                    <span></span>
+                    <p>menu</p>
+                </a>
+            </div>
+            <div class="header__navigation-central">
+                <a href="#" class="header__navigation-logo">
+                    <img src="./img/header/logo.png" alt="Логотип">
+                </a>
+                <nav class="header__navigation-list">
+                    <a href="#"  class="header__navigation-list-item">Home</a>
+                    <a href="#" class="header__navigation-list-item">Products</a>
+                    <a href="#" class="header__navigation-list-item">About</a>
+                </nav>
+            </div>
+            <div class="header__navigation-language">
+                <a href="" class="info">
+                    <img src="./img/header/info.png" alt="Инфо">
+                </a>
+                <select name="language" id="language-change">
+                    <option value="ru">ru</option>
+                    <option value="en">en</option>
+                </select>
+            </div>
+        </nav>
+        <!-- //Верхняя часть шапки -->
+        <!-- Центральная часть шапки -->
+        <div class="container">
+            <div class="header__content">
+                <nav class="header__content-navigation">
+                    <div class="number">
+                        <p>01</p>
+                    </div>
+                    <ul id="page-nav">
+                        <li class="active">
+                            <a href="#header"></a>
+                        </li>
+                        <li>
+                            <a href="#furniture-item"></a>
+                        </li>
+                        <li>
+                            <a href="#howwork"></a>
+                        </li>
+                        <li>
+                            <a href="#contacts"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__content-central">
+                    <div class="header__content-title">
+                        <h1>Wooder</h1>
+                    </div>
+                    <a href="#" class="learn-more">
+                        <p>learn more</p> 
+                        <img src="./img/header/arrow-more.svg" alt="arrow">
+                    </a>
+                    <a href="#items" class="header__content-scroll">
+                        <img class="scroll" src="./img/header/scroll.png" alt="arrow">
+                        <img class="arrow-scroll" src="./img/header/arrow-scroll.svg" alt="">
+                        <p>scroll</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Центральная часть шапки -->
+    </header>
+    <main id="items">
+        <section id="furniture-item" class="section-furniture">
+            <div class="container">
+                <div class="section-row">
+                    <span class="decoration-left-element">F</span>
+                    <div class="section-row__text">
+                        <div class="section-row__text-title">
+                            <h2>Furniture</h2>
+                        </div>
+                        <div class="section-row__text-desc">
+                            <p>Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creat-<br>ing new pieces made of reclaimed barnwood</p>
+                        </div>
+                        <a href="#" class="learn-more">
+                            <p>Learn more</p>  
+                            <img src="./img/section-img/section-arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                    <div class="section-row__img">
+                        <img src="./img/section-img/img-1.jpg" alt="">
+                    </div>
+                    <span class="decoration-text">Furniture</span>
+                    <div class="number-page">01<span>.</span></div>
+                </div>
+            </div> 
+        </section>
+        <section class="section-decor">
+            <div class="container">
+                <div class="section-row">
+                    <span class="decoration-left-element">D</span>
+                    <div class="section-row__text">
+                        <div class="section-row__text-title">
+                            <h2>Decor</h2>
+                        </div>
+                        <div class="section-row__text-desc">
+                            <p>We make all types of wooden decor as<br>per design given by Architect,Interior <br>designer, contractor which is suitable</p>
+                        </div>
+                        <a href="#" class="learn-more">
+                            <p>Learn more</p>  
+                            <img src="./img/section-img/section-arrow.svg" alt="arrow">
+                        </a>
+                    </div>
+                    <div class="section-row__img">
+                        <img src="./img/section-img/img-2.jpg" alt="">
+                    </div>
+                    <span class="decoration-text">decor</span>
+                    <div class="number-page">02<span>.</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПЛАГИНЫ И БИБЛИОТЕКИ -->
+    <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/nav.js/nav.js"></script>
+    <!-- Мои скрипты -->
+    <script src="./js/nav.js"></script>
+</body>
+</html>

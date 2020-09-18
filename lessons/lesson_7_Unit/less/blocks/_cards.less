@@ -1,0 +1,103 @@
+.section-price__card{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 303px;
+    text-align: center;
+    margin-right: 30px;
+    cursor: pointer;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in;
+
+    &:hover{
+        background-color: #2e4cf2;
+        transition: background-color 0.2s ease-in;
+
+        .card__button {
+            background-color: #fff;
+            color: #000;
+
+            transition: background-color 0.2s ease-in;
+            transition: color 0.2s ease-in;
+        }
+
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.card__top{
+    padding-top: 33px;
+    padding-bottom: 30px;
+}
+.card__title{
+    margin-bottom: 5px;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+.card__price{
+    margin-bottom: 18px;
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.monthly{
+    display: inline-block;
+    width: 80px;
+    height: 23px;
+
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    line-height: 24px;
+}
+
+.card__bottom{
+    padding-top: 25px;
+    padding-bottom: 38px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);  
+}
+
+.card__info{
+    margin-bottom: 25px;
+    list-style: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.card__button{
+    height: 50px;
+    padding: 0px 31px 3px 31px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    cursor: pointer;
+
+    border: 1px solid #363534;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    outline-style: none;
+}

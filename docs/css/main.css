@@ -1642,6 +1642,7 @@ button {
   background-color: var(--yellow);
 }
 .content-bottom-item .portfolio-img-link img {
+  width: 100%;
   height: 200px;
 }
 @media (min-width: 768px) {
