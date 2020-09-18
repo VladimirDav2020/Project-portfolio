@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <!-- Оверлей при использовании моб-меню -->
     <div id="overlay"></div>
+    <!-- //Оверлей при использовании моб-меню -->
+    <!-- Боковая навигация -->
     <ul id="page-nav">
         <li class="active">
             <a href="#header"></a>
@@ -26,7 +29,9 @@
             <a href="#contacts"></a>
         </li>
     </ul>
+    <!-- //Боковая навигация -->
     <header id="header" class="header" >
+        <!-- Верхняя навигация -->
         <nav class="header__nav" >
             <a href="https://vk.com/id299021543" target="_blank" class="logo">ВД</a>
             <nav class="nav-list">
@@ -37,6 +42,7 @@
                 <a href="#" class="nav-list-item item-mob">Услуги</a>
                 <a href="#my-works" class="nav-list-item">Работы</a>
                 <a href="#contacts" class="nav-list-item">Контакты</a>
+                <!-- соц-иконки и почта для моб-меню -->
                 <div class="mobile-contacts">
                     <div class="social-list">
                         <a class="item-git" href="https://github.com/VladimirDav2020" target="_blank"><i class="fab fa-github fa-2x"></i></a>
@@ -46,23 +52,30 @@
                     </div> 
                     <a class="email" href="mailto:davydyuk.2021@mail.ru">davydyuk.2021@mail.ru</a>
                 </div>
+                <!-- //соц-иконки и почта для моб-меню -->
             </nav>
             <nav class="nav-social">
                 <a href="https://wa.me/79994633082" class="nav-social-item" target="_blank"><i class="fab fa-whatsapp fa-2x"></i></a>
                 <a href="https://github.com/VladimirDav2020" class="nav-social-item" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 <a href="https://vk.com/id299021543" target="_blank" class="nav-social-item"><i class="fab fa-vk fa-2x"></i></a>
             </nav>
+            <!-- Бургер-меню -->
             <a href="#" class="toggle-menu">
                 <span></span>
             </a>
+            <!-- Бургер-меню -->
         </nav>
+        <!-- Верхняя навигация -->
         <div class="container">
             <div class="header__content">
+                <!-- Фотография -->
                 <div class="header__content-photo">
                     <img data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000"src="./img/header/myphoto.jpg" alt="Владимир">
                 </div>
+                <!-- Фотография -->
+                <!-- Основной текст шапки -->
                 <div class="header__content-text">
                     <h1 data-aos="fade-right" data-aos-duration="1000"><span class="header-title">Владимир</span><br><span class="header-title">Давыдюк</span></h1>
                     <div data-aos="fade-up" data-aos-duration="1300">
@@ -73,13 +86,14 @@
                         </div> 
                     </div> 
                 </div>
-                
+                <!-- //Основной текст шапки -->
             </div>
         </div>
         <div class="header__img">
             <img src="./img/header/header-bg.png" alt="Фото">
         </div>
         <div class="container">
+            <!-- Секция навыков -->
             <div id="my-skills" class="flex-wrapper">
                 <div class="about__skills"  data-aos="fade-right" data-aos-duration="1200" data-aos-offset="300">
                     <h3 class="about__skills-title">Что я умею:</h3>
@@ -103,6 +117,7 @@
                     <a class="email" href="mailto:davydyuk.2021@mail.ru">davydyuk.2021@mail.ru</a>
                 </div>
             </div>
+             <!-- Секция навыков -->
         </div>
     </header>
     <main >
@@ -118,6 +133,7 @@
                         <button  class="section-portfolio__sub-title" data-filter=".frontend" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300">Frontend</button>
                     </div>
                     <div id="portfolio-project" class="section-portfolio__content">
+                        <!-- Верхний ряд работ -->
                         <div class="content-top">
                             <div class="content-top-item mix boots frontend" data-aos="zoom-in" data-aos-duration="1200" data-aos-offset="300">
                                 <a class="portfolio-img-link" href="#">
@@ -136,6 +152,8 @@
                                 <h4 class="content__sub-title">Верстка лендинга.</h4>
                             </div>
                         </div>
+                        <!-- //Верхний ряд работ -->
+                        <!-- Нижний ряд работ -->
                         <div class="content-bottom" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
                             <div class="content-bottom-item mix wp">
                                 <a class="portfolio-img-link" href="#">
@@ -162,6 +180,7 @@
                                 <h4 class="content__sub-title">Верстка многостраничного сайта.</h4>
                             </div>
                         </div>
+                        <!-- //Нижний ряд работ -->
                         <a class="link-all-works" href="#">Смотреть все работы</a>
                     </div>
                 </div>
@@ -272,10 +291,13 @@
                         </div> 
                     </div>
                     <div class="form-wrapper">
+                        <!-- Форма -->
                         <form action="" id="contact-form" class="contacts-form" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-offset="200">
+                            <!-- Обратная связь -->
                             <input type="hidden" name="project_name" value="project-portfolio.ru">
                             <input type="hidden" name="admin_email" value="davydyuk.2021@mail.ru">
                             <input type="hidden" name="email_form" value="info@project-portfolio.ru">
+                            <!-- Обратная связь -->
                             <div class="form-item">
                                 <input class="form-field" type="email" name="email">
                                 <span class="fake-placeholder">Ваш email</span>
@@ -293,6 +315,7 @@
                             </div>
                         </form>
                         <div id="answer"></div>
+                        <!-- Форма -->
                     </div>
                 </div>
             </div>
