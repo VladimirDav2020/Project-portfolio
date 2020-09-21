@@ -333,9 +333,11 @@
     width: 100%;
     max-width: 285px;
 
+    @media(min-width: 520px){
+        max-width: 375px;
+    }
     @media(min-width: 768px){
         width: 52%;
-        max-width: 375px;
     }
     @media(min-width: 1200px){
         width: 49%;
@@ -433,6 +435,9 @@
         left: 8%;
         background: rgb(255, 255, 255);
         background-image: linear-gradient(to top, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
+    }
+    @media(min-width: 520px){
+        max-width: 460px;
     }
     @media(min-width: 768px){
         width: 46%; 

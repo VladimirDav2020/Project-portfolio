@@ -7,6 +7,18 @@
         height: 10px;
     }
 
+    .title-wrapper{
+        justify-content: flex-start;
+
+        @media(min-width: 425px){
+            justify-content: center;
+        }
+
+        @media(min-width: 1200px){
+            justify-content: flex-start;
+        }
+    }
+
     .section-title{
         @media(min-width: 1200px){
             margin-bottom: 46px;
@@ -85,6 +97,10 @@
     display: flex;
     flex-direction: column;
 
+    @media(min-width: 425px){
+        align-items: center;
+    }
+
     @media(min-width: 768px){
         display: flex;
         flex-direction: row;
@@ -99,6 +115,10 @@
     width: 100%;
     max-width: 290px;
     margin-bottom: 45px;
+
+    @media(min-width: 425px){
+        max-width: 321px;
+    }
 
     @media(min-width: 768px){
         width: 48%;
@@ -224,10 +244,15 @@
     display: flex;
     flex-direction: column;
     
+    @media(min-width: 425px){
+        align-items: center;
+    }
+    
     @media(min-width: 768px){
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 45px;
     }
     @media(min-width: 1200px){margin-bottom: 60px;}
@@ -264,16 +289,22 @@
 
     .content__title::after{bottom: 2px;}
 
+    @media(min-width: 425px){
+        max-width: 321px;
+    }
+
     @media(min-width: 768px){
         width: 48%;
         max-width: 338px;
-        margin-bottom: 0px;
+        margin-bottom: 45px;
 
+        &:last-child{
+            margin-bottom: 0;
+        }
         .content__title{font-size: 24px;}
 
         .content__sub-title{font-size: 18px;}
 
-        &:last-child{display: none;}
     }
     
     @media(min-width: 1200px){
@@ -300,7 +331,7 @@
     z-index: 2;
     width: fit-content;
     transition: .3s;
-    
+
     &::after{
         content: "";
         position: absolute;
@@ -323,6 +354,16 @@
     &:hover::after{background-color: var(--linkact);}
 
     &:active::after{background-color: var(--linkact);}
-    
+
+   @media(min-width: 425px){
+        margin-left: auto;
+        margin-right: auto;
+   }
+
+@media(min-width: 768px){
+        margin-left: 0;
+        margin-right: auto;
+   }
+
     @media(min-width: 1200px){display: none;}
 }

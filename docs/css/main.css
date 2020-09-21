@@ -374,6 +374,39 @@ button {
             justify-content: space-between;
   }
 }
+.title-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title-wrapper .section-title {
+  margin-bottom: 50px;
+  font-size: 38px;
+}
+@media (min-width: 768px) {
+  .title-wrapper .section-title {
+    margin-bottom: 162px;
+    font-size: 52px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-wrapper .section-title {
+    font-size: 64px;
+    margin-bottom: 162px;
+  }
+}
 .none {
   display: none;
 }
@@ -862,10 +895,14 @@ button {
   width: 100%;
   max-width: 285px;
 }
+@media (min-width: 520px) {
+  .header__content-text {
+    max-width: 375px;
+  }
+}
 @media (min-width: 768px) {
   .header__content-text {
     width: 52%;
-    max-width: 375px;
   }
 }
 @media (min-width: 1200px) {
@@ -986,6 +1023,11 @@ button {
   background-image: -moz-linear-gradient(bottom, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
   background-image: -o-linear-gradient(bottom, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
   background-image: linear-gradient(to top, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
+}
+@media (min-width: 520px) {
+  .header__content-photo {
+    max-width: 460px;
+  }
 }
 @media (min-width: 768px) {
   .header__content-photo {
@@ -1290,6 +1332,31 @@ button {
   bottom: 11px;
   height: 10px;
 }
+.section-portfolio .title-wrapper {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media (min-width: 425px) {
+  .section-portfolio .title-wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .section-portfolio .title-wrapper {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 @media (min-width: 1200px) {
   .section-portfolio .section-title {
     margin-bottom: 46px;
@@ -1389,6 +1456,15 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (min-width: 425px) {
+  .content-top {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media (min-width: 768px) {
   .content-top {
     display: -webkit-box;
@@ -1420,6 +1496,11 @@ button {
   width: 100%;
   max-width: 290px;
   margin-bottom: 45px;
+}
+@media (min-width: 425px) {
+  .content-top-item {
+    max-width: 321px;
+  }
 }
 @media (min-width: 768px) {
   .content-top-item {
@@ -1605,6 +1686,15 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (min-width: 425px) {
+  .content-bottom {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media (min-width: 768px) {
   .content-bottom {
     display: -webkit-box;
@@ -1624,6 +1714,9 @@ button {
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     margin-bottom: 45px;
   }
 }
@@ -1664,20 +1757,25 @@ button {
 .content-bottom-item .content__title::after {
   bottom: 2px;
 }
+@media (min-width: 425px) {
+  .content-bottom-item {
+    max-width: 321px;
+  }
+}
 @media (min-width: 768px) {
   .content-bottom-item {
     width: 48%;
     max-width: 338px;
-    margin-bottom: 0px;
+    margin-bottom: 45px;
+  }
+  .content-bottom-item:last-child {
+    margin-bottom: 0;
   }
   .content-bottom-item .content__title {
     font-size: 24px;
   }
   .content-bottom-item .content__sub-title {
     font-size: 18px;
-  }
-  .content-bottom-item:last-child {
-    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -1744,6 +1842,18 @@ button {
 .link-all-works:active::after {
   background-color: var(--linkact);
 }
+@media (min-width: 425px) {
+  .link-all-works {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .link-all-works {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
 @media (min-width: 1200px) {
   .link-all-works {
     display: none;
@@ -1772,55 +1882,6 @@ button {
   .section-work {
     max-width: 1600px;
     padding: 126px 0;
-  }
-}
-.title-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.title-wrapper .section-title {
-  margin-bottom: 50px;
-  font-size: 38px;
-}
-@media (min-width: 768px) {
-  .title-wrapper .section-title {
-    margin-bottom: 162px;
-    font-size: 52px;
-  }
-}
-@media (min-width: 1200px) {
-  .title-wrapper .section-title {
-    font-size: 64px;
-    margin-bottom: 162px;
-  }
-}
-.title-wrapper .bottom-line:after {
-  bottom: 11px;
-  height: 10px;
-}
-@media (min-width: 768px) {
-  .title-wrapper .bottom-line:after {
-    bottom: 14px;
-    height: 12px;
-  }
-}
-@media (min-width: 1200px) {
-  .title-wrapper .bottom-line:after {
-    bottom: 18px;
-    height: 12px;
   }
 }
 .section-work__content {
@@ -2199,6 +2260,14 @@ button {
   -webkit-box-shadow: 0 28px 40px #c2dbeb;
      -moz-box-shadow: 0 28px 40px #c2dbeb;
           box-shadow: 0 28px 40px #c2dbeb;
+}
+@media (min-width: 425px) {
+  .contacts-form {
+    width: 350px;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 768px) {
   .contacts-form {
