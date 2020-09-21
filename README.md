@@ -5,6 +5,5 @@
 * Контактная информация
 * Портфолио с моими работами
 * Обратная свзяь
-[Онлайн демо] (http://cp93354.tmweb.ru/)
+[Онлайн демо](http://cp93354.tmweb.ru/)
 ## Тестировать локально
-[Example][] [Example]: https://github.com/VladimirDav2020/Project-portfolio/tree/master/docs
