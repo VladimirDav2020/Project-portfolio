@@ -10,5 +10,4 @@
 [**Онлайн демо**](http://cp93354.tmweb.ru/)
 
 ## Тестировать локально
-[Example][]
-[Example]:https://github.com/VladimirDav2020/Project-portfolio/tree/master/docs
+https://github.com/VladimirDav2020/Project-portfolio/tree/master/docs
